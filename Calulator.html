@@ -1,0 +1,34 @@
+<script>
+function addition(){
+   var a = document.getElementById('no1').value;
+   var b = document.getElementById('no2').value;
+   document.write(a+b);
+}
+
+function subtraction(){
+    var a = document.getElementById('no1').value;
+   var b = document.getElementById('no2').value;
+   document.write(a-b);
+}
+
+function multiply(){
+    var a = document.getElementById('no1').value;
+   var b = document.getElementById('no2').value;
+   document.write(a*b);
+}
+
+function divide(){
+    var a = document.getElementById('no1').value;
+   var b = document.getElementById('no2').value;
+   document.write(a/b);
+}
+</script>
+
+No1 : <input type="text" id="no1"> </br></br>
+No2 : <input type="text" id="no2"> </br></br>
+
+<input type="button" value="+" onclick="addition()">
+<input type="button" value="-" onclick="subtraction()">
+<input type="button" value="*" onclick="multiply()">
+<input type="button" VALUE="/" onclick="divide()">
+
