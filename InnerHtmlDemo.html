@@ -1,0 +1,30 @@
+<script>
+function addition(a,b){
+   document.getElementById('res').innerHTML=Number(a)+parseInt(b);
+}
+
+function subtraction(a,b){
+   document.getElementById('res').innerHTML=a-b;
+}
+
+function multiply(a,b){
+   document.getElementById('res').innerHTML=a*b;
+}
+
+function divide(a,b){
+   document.getElementById('res').innerHTML=a/b;
+}
+</script>
+
+No1 : <input type="text" id="no1"> </br></br>
+No2 : <input type="text" id="no2"> </br></br>
+
+<p id="res"></p>
+
+<input type="button" value="+" onclick="addition(no1.value,no2.value)">
+<input type="button" value="-" onclick="subtraction(no1.value,no2.value)">
+<input type="button" value="*" onclick="multiply(no1.value,no2.value)">
+<input type="button" VALUE="/" onclick="divide(no1.value,no2.value)">
+
+
+
