@@ -1,0 +1,38 @@
+<script>
+function validate(){
+var username = document.getElementById('usr').value;
+var password = document.getElementById('pwd').value;
+if(username ==null || username =='' ){
+  document.getElementById('usrerr').innerHTML = 'UserName not Valied';
+  document.getElementById('usr').setAttribute('style','border-color: red')
+  return false;
+}else if(password ==null || password == ''){
+  document.getElementById('pwderr').innerHTML = 'Password not Valied';
+  document.getElementById('pwd').setAttribute('style','border-color: red')
+  return false;
+}
+else{
+  document.getElementById('usrerr').innerHTML = '';
+  document.getElementById('usr').setAttribute('style','border-color:default');
+  document.getElementById('pwderr').innerHTML = '';
+  document.getElementById('pwd').setAttribute('style','border-color:default')
+}
+return true;
+}
+
+
+</script>
+
+
+<form method="get" action="home.html" onsubmit="return validate()">
+  <p id="usrerr" style="color: red;"></p>
+  USERNAME <input type="text" name="usr" id="usr" onblur="validate()">
+</br>
+<p id="pwderr" style="color: red;"></p>
+  PASSWORD <input type="password" name="pwd" id="pwd" onblur="validate()">
+</br>
+<input type="submit">
+</form>
+
+
+
