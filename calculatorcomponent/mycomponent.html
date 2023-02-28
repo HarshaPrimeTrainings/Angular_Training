@@ -1,0 +1,8 @@
+No1 : <input type="number" #no1>
+No2: <input type="number" #no2>
+<button (click)="addition(no1.value,no2.value)">ADD</button>
+<button (click)="subtraction(no1.value,no2.value)">Subtraction</button>
+<button (click)="divide(no1.value,no2.value)"> Divison</button>
+<button (click)="multply(no1.value,no2.value)" > Multiply</button>
+
+<div> Result ::: {{ result }}</div>
