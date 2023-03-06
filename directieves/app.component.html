@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td,th{
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>App Component</h1>
+
+<div *ngIf="promo == 'abc'">You got 10% Discount</div>
+<input type="text" #promption (keyup)="getpromotion(promption.value)"> 
+
+<ul *ngFor="let temp of list">
+    <li>{{temp}}</li>
+</ul>
+
+<table>
+        <tr >
+            <th>PID</th>
+            <th>PNAME</th>
+            <th>Status</th>
+        </tr>
+        <tr *ngFor="let item of prodcuts">
+            <td>{{item.pid}}</td>
+            <td>{{item.pname}}</td>
+            <td>{{item.satus}}</td>
+        </tr>
+</table>
+
+</body>
+</html>
+
+
+
