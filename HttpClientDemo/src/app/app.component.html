@@ -1,0 +1,21 @@
+
+<h1>App Component</h1>
+<button (click)="diplayUser()">GetUsers</button>
+<table *ngIf="users!=null">
+<tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Company</th>
+</tr>
+
+<tr *ngFor="let usr of users">
+    <td>{{usr.id}}</td>
+    <td>{{usr.name}}</td>
+    <td> {{usr.email}}</td>
+    <td>{{usr.company.name}}</td>
+</tr>
+</table>
+
+
+
